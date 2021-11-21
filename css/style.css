@@ -1,0 +1,181 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:"SF Pro Text";
+}
+a{
+    list-style: none;
+    user-select: none;
+    /* color: gray; */
+    text-decoration: none
+}
+
+.navbar{
+    /* border: 3px solid red; */
+  
+    width: 100vw;
+    height: 8vh;
+
+    background-color: black;
+    /* color: white; */
+    font-size: 12px;
+
+
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    z-index: 9999;
+}
+.ulnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 3vh;
+    list-style: none;
+
+}
+.linav a{
+    color:grey;
+    z-index: 5;
+}
+.linav a:hover{
+    color: white;
+}
+
+.space{
+    width: 15vw;
+
+}
+
+.adbar{
+    margin-top: 8vh;
+    width: 100vw;
+    height: 8vh;
+
+    background-color: red;
+    color:white;
+
+    text-align: center;
+    padding-top: 3vh;
+    font-size: 14px;
+}
+.adbar a{
+    color: white;
+}
+.adbar a:hover{
+    text-decoration: underline;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: repeat(2,50vw) ;
+    grid-template-rows:repeat(6,90vh);
+    grid-column-gap:1vw;
+    grid-row-gap: 1vw;
+
+    }
+    .linkpage {
+        position: absolute;
+        top: 16vh;
+        left: 0;
+        width: 100vw;
+        height: 90vh;
+        z-index: 3;
+    }
+   
+    .gift {
+        background-color: #fbedf9;
+        grid-area: 1 / 1 / 2 / 3; 
+        font-size: 25px;
+        line-height: 25px;
+        }
+    .gift .giftimg{
+        width: 5vw;
+        margin-left: 47vw;
+        margin-top: 4vh;   
+     }  
+     .gift h2{
+         font-family: 'SF Pro Text';
+         font-size: 17px;
+         text-align:center;
+     }
+  
+     .gift .link {
+         font-size: 17px;
+         text-align:center ;
+         color:#0071e3;
+         z-index: 3;
+
+     }
+     .gift .link a{
+        color:#0071e3;
+        z-index:3;
+
+     }  
+     .gift .link a:hover{
+         text-decoration: underline;
+         z-index:3;
+         text-decoration-color: none;
+     }  
+     .gift .pic {
+         display: flex;
+         flex-direction: row;
+         margin-left: 15vw;
+         margin-top: 3vh;
+
+     }
+     .gift .pic .pic1{
+         width: 22vw;
+         
+     }
+     .gift .pic .pic2{
+        width: 22vw;
+        
+    }
+    .gift .pic .pic3{
+        width: 22vw;
+        
+    }
+   
+    .pro13 {
+        background-color: green;
+        grid-area: 2 / 1 / 3 / 3; 
+
+    }
+    .iphone13 {
+        background-color: blue;
+        grid-area: 3 / 1 / 4 / 3; 
+
+    }
+    .macbook { 
+        background-color: palegreen;
+        grid-area: 4 / 1 / 5 / 2; 
+    
+    }
+    .airpods { 
+        background-color: yellow;
+        grid-area: 4 / 2 / 5 / 3;
+ 
+    }
+    .homepod {
+        background-color: red;
+        grid-area: 5 / 1 / 6 / 2;
+
+    }
+    .watch { 
+        background-color: pink;
+        grid-area: 5 / 2 / 6 / 3; 
+
+    }
+    .card { 
+        background-color: teal;
+        grid-area: 6 / 1 / 7 / 2; 
+
+    }
+    .tv {
+        background-color: aqua;
+        grid-area: 6 / 2 / 7 / 3; 
+
+    }
